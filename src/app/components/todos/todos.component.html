@@ -5,7 +5,9 @@
   >
     <div class="todo-data">
       <span class="id">{{ i }}</span>
-      <span class="content">{{ todo.content }}</span>
+      <span class="content" (click)="toggleCompleted(i)">{{
+        todo.content
+      }}</span>
     </div>
     <button mat-raised-button color="primary" onclick="remove()">Remove</button>
   </div>
