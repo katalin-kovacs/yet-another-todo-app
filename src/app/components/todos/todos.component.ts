@@ -2,11 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { Todo } from '../../models/todo';
 import { CommonModule } from '@angular/common';
 import { MatButtonModule } from '@angular/material/button';
+import { AddTodoFormComponent } from '../../add-todo-form/add-todo-form.component';
 
 @Component({
   selector: 'app-todos',
   standalone: true,
-  imports: [CommonModule, MatButtonModule],
+  imports: [CommonModule, MatButtonModule, AddTodoFormComponent],
   templateUrl: './todos.component.html',
   styleUrl: './todos.component.scss',
 })
