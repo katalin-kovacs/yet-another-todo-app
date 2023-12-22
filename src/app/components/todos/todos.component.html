@@ -1,4 +1,5 @@
-<app-add-todo-form></app-add-todo-form>
+<app-add-todo-form (addTodoEvent)="addTodo($event)"></app-add-todo-form>
+<mat-divider></mat-divider>
 <section class="todos">
   <div
     *ngFor="let todo of todos; let i = index"
