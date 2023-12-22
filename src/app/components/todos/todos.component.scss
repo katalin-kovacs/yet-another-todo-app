@@ -1,0 +1,27 @@
+.todo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 8px 12px;
+  transition: 0.3s;
+
+  &:nth-child(even) {
+    background-color: color-mix(in srgb, #000 4%, #fff);
+  }
+
+  &:hover {
+    background-color: color-mix(in srgb, #000 8%, #fff);
+  }
+}
+
+.todo-data {
+  display: flex;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+.content {
+  font-weight: 600;
+}

@@ -1,7 +1,9 @@
 <section class="todos">
   <div class="todo" *ngFor="let todo of todos; let i = index">
-    <div class="id">{{ i }}</div>
-    <div class="content">{{ todo.content }}</div>
-    <button class="deleteBtn">Remove</button>
+    <div class="todo-data">
+      <span class="id">{{ i }}</span>
+      <span class="content">{{ todo.content }}</span>
+    </div>
+    <button mat-raised-button color="primary" onclick="remove()">Remove</button>
   </div>
 </section>

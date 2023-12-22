@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { Todo } from '../../models/todo';
 import { CommonModule } from '@angular/common';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-todos',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, MatButtonModule],
   templateUrl: './todos.component.html',
   styleUrl: './todos.component.scss',
 })
@@ -30,4 +31,6 @@ export class TodosComponent implements OnInit {
       },
     ];
   }
+
+  remove(): void {}
 }
